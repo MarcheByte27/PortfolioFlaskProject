@@ -1,0 +1,139 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="py-5 min-vh-100 animate-on-scroll">
+    <div class="container py-4">
+        
+        <!-- SECTION 1: EXPERIENCIA PROFESIONAL -->
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-dark tracking-wide mb-3">EXPERIENCIA PROFESIONAL</h1>
+            <div class="mx-auto bg-primary rounded mb-4" style="width: 60px; height: 3px;"></div>
+            <p class="text-muted lead">Proyectos desarrollados para el sector privado y administraciones.</p>
+        </div>
+
+        <div class="row g-4 mb-5 pb-4 border-bottom">
+            <!-- Experience 1: Pictury Archviz -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden hover-elevate bg-white">
+                    <div class="bg-primary-subtle d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="bi bi-images text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold mb-2 text-dark">Generador IA Archviz</h4>
+                        <div class="mb-3 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark border fw-normal">FastAPI</span>
+                            <span class="badge bg-light text-dark border fw-normal">PyTorch</span>
+                            <span class="badge bg-light text-dark border fw-normal">Flask</span>
+                            <span class="badge bg-light text-dark border fw-normal">GCP</span>
+                        </div>
+                        <p class="text-muted mb-4 small lh-lg flex-grow-1">Aplicación web desde cero en Pictury. Integración de APIs de Google ImagesFX 4 y modelos personalizados de Stable Diffusion con endpoints REST propios.</p>
+                        <span class="text-primary fw-medium small"><i class="bi bi-building me-1"></i> Pictury Archviz</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2: Cambrian Intelligence (Barómetros) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden hover-elevate bg-white">
+                    <div class="bg-primary-subtle d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="bi bi-bar-chart-steps text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold mb-2 text-dark">Gestor de Barómetros</h4>
+                        <div class="mb-3 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark border fw-normal">Flask</span>
+                            <span class="badge bg-light text-dark border fw-normal">NEO4j</span>
+                            <span class="badge bg-light text-dark border fw-normal">Superset</span>
+                            <span class="badge bg-light text-dark border fw-normal">Docker</span>
+                        </div>
+                        <p class="text-muted mb-4 small lh-lg flex-grow-1">Optimización de app web para la gestión de barómetros (Junta de Andalucía). Transmisión de datos mediante API y modernización de Apache Superset.</p>
+                        <span class="text-primary fw-medium small"><i class="bi bi-building me-1"></i> Cambrian Intelligence</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3: Cambrian Intelligence (Telemedicina) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden hover-elevate bg-white">
+                    <div class="bg-primary-subtle d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="bi bi-heart-pulse text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold mb-2 text-dark">Sistema Telemedicina</h4>
+                        <div class="mb-3 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark border fw-normal">TypeScript</span>
+                            <span class="badge bg-light text-dark border fw-normal">ELM</span>
+                            <span class="badge bg-light text-dark border fw-normal">NEO4j</span>
+                        </div>
+                        <p class="text-muted mb-4 small lh-lg flex-grow-1">Desarrollo y actualización de un sistema médico integral (alertas, cuestionarios) implementando backend en TypeScript y frontend funcional reactivo en ELM.</p>
+                        <span class="text-primary fw-medium small"><i class="bi bi-building me-1"></i> Cambrian Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: PROYECTOS PROPIOS -->
+        <div class="text-center mb-5 mt-5">
+            <h1 class="display-5 fw-bold text-dark tracking-wide mb-3">PROYECTOS PROPIOS</h1>
+            <div class="mx-auto bg-primary rounded mb-4" style="width: 60px; height: 3px;"></div>
+            <p class="text-muted lead">Aplicaciones de código abierto, personales y trabajos académicos.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Own Project 1: Portfolio -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden hover-elevate bg-white">
+                    <div class="bg-primary-subtle d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="bi bi-person-badge text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold mb-2 text-dark">Portfolio Web Personal</h4>
+                        <div class="mb-3 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark border fw-normal">Python</span>
+                            <span class="badge bg-light text-dark border fw-normal">Flask</span>
+                            <span class="badge bg-light text-dark border fw-normal">Bootstrap 5</span>
+                        </div>
+                        <p class="text-muted mb-4 small lh-lg flex-grow-1">Diseño y desarrollo de este porfolio web completamente dinámico usando el framework Flask, modularización de plantillas (Jinja) y despliegue rápido.</p>
+                        <a href="https://github.com/MarcheByte27" target="_blank"
+                            class="btn btn-outline-primary rounded-pill w-100 fw-medium mt-auto">Ver en GitHub <i
+                                class="bi bi-box-arrow-up-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Own Project 2: NFC TFG -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden hover-elevate bg-white">
+                    <div class="bg-primary-subtle d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="bi bi-door-closed text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold mb-2 text-dark">Cerradura Inteligente NFC</h4>
+                        <div class="mb-3 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-light text-dark border fw-normal">C++</span>
+                            <span class="badge bg-light text-dark border fw-normal">ESP32</span>
+                            <span class="badge bg-light text-dark border fw-normal">Python</span>
+                        </div>
+                        <p class="text-muted mb-4 small lh-lg flex-grow-1">Proyecto de Fin de Grado (TFG: 9/10). Desarrollo de una
+                            cerradura NFC física programada con un microcontrolador ESP32 y controlada vía interfaz
+                            gráfica en Python.</p>
+                        <div class="d-flex gap-2 mt-auto">
+                            <a href="https://github.com/MarcheByte27/TFG_NFC_Locker" target="_blank"
+                                class="btn btn-outline-primary rounded-pill w-100 fw-medium">GitHub <i
+                                    class="bi bi-box-arrow-up-right ms-1"></i></a>
+                            <a href="https://www.linkedin.com/posts/fjmarchena_memoria-tfg-cerradura-nfc-ugcPost-7381989613172858880-k3Kl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfji_QB3C1CbGsXRFdYtgIHKdo29eDC4SA"
+                                target="_blank" class="btn btn-outline-primary rounded-pill w-100 fw-medium px-1">LinkedIn
+                                <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,122 @@
+/* ========================================================
+   CSS Variables & Tokens 
+   ======================================================== */
+   :root {
+    --primary-color: #3b82f6; /* Modern Blue */
+    --primary-hover: #2563eb;
+    --secondary-color: #1e293b; /* Dark Slate Gray */
+    --bg-light: #f8fafc; /* Very light slate for backgrounds */
+    --dark-custom: #0f172a; /* Deep footer dark */
+}
+
+/* ========================================================
+   Global Overrides & Typography 
+   ======================================================== */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #334155;
+    background-color: var(--bg-light);
+}
+
+.text-dark { color: var(--secondary-color) !important; }
+.text-secondary { color: #64748b !important; }
+
+/* Bootstrap Color Overrides */
+.bg-primary { background-color: var(--primary-color) !important; }
+.text-primary { color: var(--primary-color) !important; }
+.border-primary { border-color: var(--primary-color) !important; }
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-primary-subtle {
+    background-color: #eff6ff !important;
+}
+.bg-dark-custom {
+    background-color: var(--dark-custom);
+}
+
+/* ========================================================
+   Animations & Transitions 
+   ======================================================== */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.hover-elevate {
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.hover-elevate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.hover-scale {
+    transition: transform 0.2s ease-in-out;
+}
+.hover-scale:hover {
+    transform: scale(1.1);
+}
+
+.hover-float {
+    transition: transform 1.5s ease-in-out;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Intersection Observer Fade-In */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================================
+   Utility & Helpers 
+   ======================================================== */
+.tracking-wide { letter-spacing: 0.05em; }
+.ls-1 { letter-spacing: 1px; }
+
+/* Navbar Active state links */
+.nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+.text-dark-hover {
+    color: #475569;
+    transition: color 0.15s ease;
+}
+.text-dark-hover:hover:not(.active) {
+    color: var(--primary-color);
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+}

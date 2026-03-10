@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- Section: Hero -->
+<section class="hero-section py-5 my-md-5 animate-on-scroll">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Left Text Content -->
+            <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+                <span
+                    class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3 fw-semibold ls-1">Desarrollador
+                    Backend</span>
+                <h1 class="display-4 fw-bold mb-3 text-dark lh-sm">
+                    Francisco Javier Marchena Curado
+                </h1>
+                <h2 class="h3 fw-normal text-secondary mb-4 lh-base" style="color: var(--secondary-color) !important;">
+                    Creando el Futuro con <strong class="text-primary fw-bold">Python</strong>, Flask, Docker y Linux
+                </h2>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-5">
+                    <a href="{{ url_for('projects') }}"
+                        class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold shadow hover-elevate">
+                        Ver Mis Proyectos
+                    </a>
+                    <a href="{{ url_for('contact') }}"
+                        class="btn btn-outline-dark btn-lg rounded-pill px-5 py-3 fw-semibold hover-elevate">
+                        Contáctame
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Illustration -->
+            <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-end relative">
+                <div class="img-wrapper d-inline-block position-relative">
+                    <!-- Decorative blob background -->
+                    <div class="position-absolute blob-shape bg-primary opacity-10 blur-xl w-100 h-100 rounded-circle"
+                        style="z-index: -1; transform: scale(1.1) translate(-5%, -5%);"></div>
+                    <img src="{{ url_for('static', filename='img/hero.png') }}" alt="Developer Illustration"
+                        class="img-fluid rounded-4 hover-float hero-img z-1 position-relative"
+                        style="max-height: 450px; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: Conóceme -->
+<section class="about-section py-5 bg-white border-top animate-on-scroll">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <h3 class="fw-bold mb-3 text-uppercase tracking-wide" style="color: var(--secondary-color);">Conóceme
+                </h3>
+                <div class="mx-auto bg-primary rounded" style="width: 50px; height: 3px;"></div>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center align-items-start">
+            <div class="col-md-5">
+                <div
+                    class="p-4 bg-light rounded-4 shadow-sm h-100 transition-all hover-elevate border-start border-primary border-4">
+                    <i class="bi bi-person-gear text-primary fs-1 mb-3 d-block"></i>
+                    <h4 class="fw-bold mb-3 fs-5">Perfil Profesional</h4>
+                    <p class="text-muted lh-lg mb-0">
+                        Gran motivación por el desarrollo constante e implementación de nuevas tecnologías. Experto en integrar soluciones de inteligencia artificial y optimización de procesos, aportando un enfoque práctico y proactivo. Preparado para contribuir al crecimiento y la innovación del equipo.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div
+                    class="p-4 bg-light rounded-4 shadow-sm h-100 transition-all hover-elevate border-start border-primary border-4">
+                    <i class="bi bi-lightning-charge text-primary fs-1 mb-3 d-block"></i>
+                    <h4 class="fw-bold mb-3 fs-5">Soft Skills</h4>
+                    <p class="text-muted lh-lg mb-0">
+                        Alta capacidad para resolver problemas, trabajo en equipo, colaboración efectiva, aprendizaje rápido, comunicación asertiva, adaptabilidad al cambio, compromiso, y responsabilidad profesional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

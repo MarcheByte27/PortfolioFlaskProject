@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="py-5 bg-white min-vh-100 animate-on-scroll">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bold text-dark tracking-wide mb-3">CONTÁCTAME</h1>
+                    <div class="mx-auto bg-primary rounded mb-4" style="width: 60px; height: 3px;"></div>
+                    <p class="text-muted lead">¿Tienes algún proyecto en mente o quieres que colaboremos juntos? Envíame un mensaje.</p>
+                </div>
+
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="row g-0">
+                        <!-- Contact Info -->
+                        <div class="col-md-5 bg-primary text-white p-5 d-flex flex-column justify-content-between position-relative">
+                            <div class="position-absolute top-0 end-0 mt-4 me-4 opacity-25">
+                                <i class="bi bi-send" style="font-size: 6rem;"></i>
+                            </div>
+                            <div class="z-1">
+                                <h3 class="fw-bold mb-4">Información</h3>
+                                <p class="mb-5 text-white-75 fs-6 lh-lg">
+                                    Siempre estoy dispuesto a charlar sobre código, desarrollo backend y nuevas oportunidades tecnológicas.
+                                </p>
+                                
+                                <div class="d-flex align-items-center mb-4 hover-scale">
+                                    <div class="bg-white bg-opacity-25 rounded-circle p-2 me-3 d-inline-flex">
+                                        <i class="bi bi-geo-alt fs-5"></i>
+                                    </div>
+                                    <span class="fw-medium">España</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-4 hover-scale">
+                                    <div class="bg-white bg-opacity-25 rounded-circle p-2 me-3 d-inline-flex">
+                                        <i class="bi bi-linkedin fs-5"></i>
+                                    </div>
+                                    <a href="https://www.linkedin.com/in/fjmarchena/" target="_blank" class="text-white text-decoration-none fw-medium stretched-link-custom">LinkedIn</a>
+                                </div>
+                                <div class="d-flex align-items-center hover-scale">
+                                    <div class="bg-white bg-opacity-25 rounded-circle p-2 me-3 d-inline-flex">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </div>
+                                    <a href="https://github.com/MarcheByte27" target="_blank" class="text-white text-decoration-none fw-medium stretched-link-custom">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form -->
+                        <div class="col-md-7 p-5 bg-white">
+                            <h4 class="fw-bold mb-4 text-dark fs-3">Envíame un mensaje</h4>
+                            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Para que esto funcione requieres configurar Flask-Mail más adelante.');">
+                                <div class="mb-4">
+                                    <label for="nameInput" class="form-label fw-medium text-muted">Nombre</label>
+                                    <input type="text" class="form-control form-control-lg bg-light border-0 shadow-none focus-ring focus-ring-primary rounded-3" id="nameInput" placeholder="Tu nombre..." required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="emailInput" class="form-label fw-medium text-muted">Correo Electrónico</label>
+                                    <input type="email" class="form-control form-control-lg bg-light border-0 shadow-none focus-ring focus-ring-primary rounded-3" id="emailInput" placeholder="nombre@ejemplo.com" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="messageInput" class="form-label fw-medium text-muted">Mensaje</label>
+                                    <textarea class="form-control form-control-lg bg-light border-0 shadow-none focus-ring focus-ring-primary rounded-3" id="messageInput" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow-sm hover-elevate mt-2">
+                                    Enviar Mensaje <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

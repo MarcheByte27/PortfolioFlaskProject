@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="py-5 bg-white min-vh-100 animate-on-scroll">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-dark tracking-wide mb-3">MI STACK TECNOLÓGICO</h1>
+            <div class="mx-auto bg-primary rounded mb-4" style="width: 60px; height: 3px;"></div>
+            <p class="text-muted lead">Herramientas y tecnologías que utilizo en mi día a día para crear soluciones robustas.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Python / Backend -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-4 hover-elevate bg-light rounded-4">
+                    <div class="mb-3">
+                        <i class="bi bi-filetype-py text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 text-dark">Ecosistema Python</h5>
+                    <p class="text-muted small mb-0 lh-lg">Servidores y APIs con Flask, FastAPI y Django.</p>
+                </div>
+            </div>
+            <!-- Inteligencia Artificial -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-4 hover-elevate bg-light rounded-4">
+                    <div class="mb-3">
+                        <i class="bi bi-cpu text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 text-dark">Inteligencia Artificial</h5>
+                    <p class="text-muted small mb-0 lh-lg">Implementación de PyTorch y Modelos como Stable Diffusion.</p>
+                </div>
+            </div>
+            <!-- Otros Lenguajes -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-4 hover-elevate bg-light rounded-4">
+                    <div class="mb-3">
+                        <i class="bi bi-code-square text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 text-dark">Lenguajes Diversos</h5>
+                    <p class="text-muted small mb-0 lh-lg">Experiencia con Java, TypeScript, C/C++ y Elm funcional.</p>
+                </div>
+            </div>
+            <!-- Herramientas Cloud/DevOps -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-4 hover-elevate bg-light rounded-4">
+                    <div class="mb-3">
+                        <i class="bi bi-cloud-check text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 text-dark">Cloud & DevOps</h5>
+                    <p class="text-muted small mb-0 lh-lg">GCP, contenedores Docker, GitHub/GitLab Pipelines y Linux.</p>
+                </div>
+            </div>
+            <!-- Bases de Datos -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-4 hover-elevate bg-light rounded-4">
+                    <div class="mb-3">
+                        <i class="bi bi-diagram-3 text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 text-dark">Bases de Datos</h5>
+                    <p class="text-muted small mb-0 lh-lg">Bases de datos en grafos (NEO4j) y relacionales estructuradas.</p>
+                </div>
+            </div>
+            <!-- Microcontroladores -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-4 hover-elevate bg-light rounded-4">
+                    <div class="mb-3">
+                        <i class="bi bi-motherboard text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 text-dark">Microcontroladores</h5>
+                    <p class="text-muted small mb-0 lh-lg">Programación de ESP32, STM32, Arduino y Raspberry Pi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
